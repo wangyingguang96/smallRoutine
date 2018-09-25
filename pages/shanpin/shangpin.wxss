@@ -1,0 +1,214 @@
+/* pages/shanpin/shangpin.wxss */
+
+.sp_box {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.nav_box {
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+}
+
+.nav_input {
+  width: 85%;
+  height: 80rpx;
+  background-color: #f7f7f7;
+  border-radius: 5rpx;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 130rpx;
+  top: 19rpx;
+}
+
+.nav_input input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/*  */
+
+/*总体主盒子*/
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #939393;
+  border-top: 1rpx solid lightgray;
+}
+
+/*左侧栏主盒子*/
+
+.nav_left {
+  /*设置行内块级元素（没使用定位）*/
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  /*主盒子设置背景色为灰色*/
+  background: #f5f5f5;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 3rem;
+}
+
+/*左侧栏list的item*/
+
+.nav_left .nav_left_items {
+  /*每个高30px*/
+  height: 40px;
+  /*垂直居中*/
+  line-height: 40px;
+  /*再设上下padding增加高度，总高42px*//* padding: 6px 0; *//*只设下边线*/
+  border-bottom: 1px solid #dedede;
+  /*文字14px*/
+  font-size: 14px;
+}
+
+/*左侧栏list的item被选中时*/
+
+.nav_left .nav_left_items.active {
+  /*背景色变成白色*/
+  background: #fff;
+  color: #f0145a;
+}
+
+/*右侧栏主盒子*/
+
+.nav_right {
+  /*右侧盒子使用了绝对定位*/
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  /* flex: 1; *//*宽度75%，高度占满，并使用百分比布局*/
+  width: 75%;
+  /* height: 1000px; */
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/*右侧栏list的item*/
+
+.nav_right .nav_right_items {
+  /*浮动向左*/
+  float: left;
+  /*每个item设置宽度是33.33%*/
+  width: 100%;
+  height: 90px;
+  /* text-align: center; */
+  border-bottom: 1rpx solid lightgray;
+}
+
+.nav_right .nav_right_items:nth-child(1) {
+  margin-top: 80px;
+}
+
+.nav_right .nav_right_items image {
+  /*被图片设置宽高*/
+  width: 75px;
+  height: 65px;
+  margin-top: 15px;
+}
+
+.nav_right .nav_right_items text {
+  /*给text设成块级元素*/
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: black;
+  /*设置文字溢出部分为...*/
+  overflow: hidden;
+  text-align: left;
+  /* white-space: nowrap; *//* text-overflow: ellipsis; */
+}
+
+.nodata_text {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.jiahao {
+  margin-top: 43rpx;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 38rpx;
+  border-radius: 50%;
+  border: 1rpx solid orange;
+  color: orange;
+  font-weight: bolder;
+}
+
+.sp_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pic text{
+  color: orange;
+}
+
+.sp_rigth {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.nav_daohang {
+  margin-top: -2px;
+  width: 73%;
+  height: 82px;
+  background-color: white;
+  position: fixed;
+}
+
+.nav_daoh_top {
+  height: 41px;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+
+.nav_daoh_top text {
+  font-size: 0.8rem;
+  display: inline-block;
+  width: 33%;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav_daoh_bottom {
+  width: 100%;
+  height: 41px;
+  line-height: 35rpx;
+  font-size: 0.8rem;
+  border-bottom: 1rpx solid lightgray;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: orange;
+}

@@ -1,0 +1,64 @@
+<view class='box'>
+  <!--pages/home/home.wxml-->
+  <view class='nav_box'>
+    <view class='nav_input'>
+      <icon class='icon' type="search" size="20" />
+      <input placeholder="搜索" auto-focus/>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class='carouse'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='carouse'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls1}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='carouse'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls2}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 四个按钮 -->
+  <view class='button_box_4'>
+    <view class='button_item' wx:for="{{buttons}}" wx:key="">
+      <image src='{{item.butImg}}'></image>
+      <text>{{item.tex}}</text>
+    </view>
+  </view>
+
+<!-- 商品精选 -->
+  <view class='spjx_box'>
+      <view class='spjx_top'>
+          <icon type="success" size="20" color="black"/>
+          <text>商品精选</text>
+      </view>
+      <view class='spjx_content_box'>
+        <view class='spjx_content' wx:for="{{spjx}}" wx:key="">
+          <image src='{{item.spjxImg}}'></image>
+          <text>{{item.text}}</text>
+          <view class='spjx_pir'>
+             <text>{{item.pir}}</text>
+             <view class='spjx_jiaohao'>+</view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

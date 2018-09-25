@@ -1,0 +1,122 @@
+/* pages/home/home.wxss */
+.box{
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.nav_box{
+  width: 100%;
+  height: 3rem;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_input{
+  width: 85%;
+  height: 80rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20rpx;
+  position: relative;
+}
+.icon{
+  position: absolute;
+  left: 220rpx;
+  top: 20rpx;
+}
+.nav_input input{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 0.9rem;
+  color: white;
+}
+/* 轮播图 */
+.carouse{
+  width: 100%;
+}
+.carouse image{
+  width: 100%;
+  height: 100%;
+}
+/* 4个按钮 */
+.button_box_4{
+  margin: 50rpx 0 30rpx 0;
+  width: 100%;
+  height: 6.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.button_item{
+  width: 25%;
+  height: 90%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.button_item image{
+ 
+  width: 90%;
+  height: 3.5rem;
+}
+.button_item text{
+  font-size: 0.8rem;
+}
+/* 商品精选 */
+.spjx_box{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.spjx_top{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid lightgray;
+}
+.spjx_top icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+/* 商品精选内容 */
+.spjx_content_box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.spjx_content{
+  width: 50%;
+  height: 500rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  text-align: left;
+  border-bottom: 1rpx solid lightgray;
+}
+.spjx_content image{
+  width: 95%;
+  height: 45vw;
+  margin-bottom: 10rpx;
+}
+
+.spjx_pir{
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.spjx_jiaohao{
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  border: 1rpx solid orange;
+  color: orange;
+  font-weight: bolder;
+}
